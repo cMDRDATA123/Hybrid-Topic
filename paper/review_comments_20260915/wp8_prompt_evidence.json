@@ -1,0 +1,611 @@
+{
+  "requests_checked": 99,
+  "prefix_variants": {
+    "initial": 1,
+    "residual": 1
+  },
+  "prefixes": {
+    "initial": [
+      "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    ],
+    "residual": [
+      "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    ]
+  },
+  "records": [
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed11/requests/request_0001.json",
+      "sha256": "a04314d05cb158e2532a6fdadf5935db77200bb1c084cf30b1f78d7e87e93ce1",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed11/requests/request_0002.json",
+      "sha256": "0dad95a2912604edeec528f06b07bb9cc34d462f0c36a70bad9af226a0002632",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed11/requests/request_0003.json",
+      "sha256": "7c59fa5d02b73f4d853ebd532ed1fa39d1bb512c36f4dccc1f6904153d82fa2e",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed23/requests/request_0001.json",
+      "sha256": "90fee4517b968a038481ffe2f3a867b2da0a5d7df5443c1a05f33b09963cf318",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed23/requests/request_0002.json",
+      "sha256": "d93854d0522a3457a5d55a6cfdfdc67a44685cc269284af75f493ba61ac42b70",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed23/requests/request_0003.json",
+      "sha256": "ec55912a962fdf0984dbd1c267e1af96a85b027477348f573891538ba1c3f806",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed37/requests/request_0001.json",
+      "sha256": "5fc4b5ff48349978fe595a7e173834b628084504c578ce61ffe0753e8e74146e",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed37/requests/request_0002.json",
+      "sha256": "153e4cb72fc8c050c5c6c2b0db774d2b176dc0821deb40ca8e372e7e5b7c3b4b",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed37/requests/request_0003.json",
+      "sha256": "37d43c99ed5efec9a7fe6b165ae614e8a8da2aa947cfda27b7c1cf75941c5a9f",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed53/requests/request_0001.json",
+      "sha256": "1ba13c4024c1a4e1ad70a05e0c1593bda81567e15c6df08c02a964031d140128",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed53/requests/request_0002.json",
+      "sha256": "291fdb883c387d56c5b26476af7b412fad91aba49b79b35416c0b757cc24e4fc",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed53/requests/request_0003.json",
+      "sha256": "8dfed0d55bf4043eaf2ae04dde8cf947ea29e4c27d34f9a8ff4d281b2969bd94",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed71/requests/request_0001.json",
+      "sha256": "eb030a98c6adaac16b573434f71108966ba73e9201f86ad19af8fb4ce5fe0857",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed71/requests/request_0002.json",
+      "sha256": "b0ccfcf3f35250776a46b980eda3b7d4073a4b9f4ab655b402710b31b7cf90ce",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/ag_news_seed71/requests/request_0003.json",
+      "sha256": "e84ea41b9d55544c6cc5269ffa01a0a7abc5656ea2cdf73191134c8c0df1db8f",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed11/requests/request_0001.json",
+      "sha256": "b3c6847f49e3c74a3d608763f110e7b6669e3e422a62e49988c32599d0da5375",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed11/requests/request_0002.json",
+      "sha256": "78b08c0bf8f91eb0158ef664486b30782c95d6cd3709a04afd1880c193120f41",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed23/requests/request_0001.json",
+      "sha256": "3617945efad7197389b434826c6f37f967c28a0c139dff9fc3c48742ddb462a6",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed23/requests/request_0002.json",
+      "sha256": "2d3a1b89fa69b2cfe0a3e3c74e35a8ec021466963ce9e6394e98c51e5ca2551b",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed23/requests/request_0003.json",
+      "sha256": "aa0c9aa14ad7d74056120b0ec27dbdfd35c31668aba9c513c9b10e7977a82ea2",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed37/requests/request_0001.json",
+      "sha256": "afcb6984948afa175382d9cc563cb9aff1dc7e1d5c9e107cf12632592654dfa3",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed37/requests/request_0002.json",
+      "sha256": "245091a4a6f30a215df3c5499c61105b0a2359c4a684781edbe69ce156dee31b",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed37/requests/request_0003.json",
+      "sha256": "0b9f37b3748c6a74e972d8045283fd1361cc736c9ece053d36e3b5779f04f414",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed53/requests/request_0001.json",
+      "sha256": "6040869f40caac80ada8c38fffc5e0dd915476605e84ed71ea8026044c98e8f3",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed53/requests/request_0002.json",
+      "sha256": "b8ea2f5043777a20bf6fbb370947e0e1a97f1378af8a565bef94a215d55bf5bd",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed53/requests/request_0003.json",
+      "sha256": "2d0308feb343df50f94d95a193fbf4c982605d41a84152bfe4878db690cd8c57",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed71/requests/request_0001.json",
+      "sha256": "1cd0312c186d356be0e21f33cdd57897eaf6ee35974b04a1b0844d5330eef870",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed71/requests/request_0002.json",
+      "sha256": "16dc2166bb961fb99c9c2304ff360d6958a79047bd1277d7548911f4a8c9d349",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/bills_seed71/requests/request_0003.json",
+      "sha256": "a859fc5fa68e0190b15dbd35fc49069542246c15ca3b2ae6d5a3a5e6ae3f7ddf",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed11/requests/request_0001.json",
+      "sha256": "15c8376e0bcf3e204ed62aa0dd5df1f5a0c209cecf1a81d574359d1833ae0c4b",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed11/requests/request_0002.json",
+      "sha256": "e377863416ad8f43413744323637573e2908f6afe1e94dac858b3047e4382e8e",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed11/requests/request_0003.json",
+      "sha256": "9dea91754777257456e9080a87ccba0cbc50f13c3047b19e282b914ca0028f68",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed23/requests/request_0001.json",
+      "sha256": "55bfbe6324d62a496488abaaf33f2ec1779e9876b3337251fbfe30c86088463e",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed23/requests/request_0002.json",
+      "sha256": "a3b191fafc13ead1d83537a5eca56bbf465519c24867f6c28bd8a48d1e25e4fc",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed23/requests/request_0003.json",
+      "sha256": "28746d2bd04000bbdebdd0b41350e33bfd6f9b99c565e8ebdbaff766d8a7d316",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed37/requests/request_0001.json",
+      "sha256": "3a1a82e0d7e6dcfe7fe4afaec3e7d074e8b661a88db0233e0ad48ef1bb4be431",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed37/requests/request_0002.json",
+      "sha256": "697837203ac3ea69262b9bae9e57f17230df5218694e4ec0ef463860912c2f09",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed37/requests/request_0003.json",
+      "sha256": "18ec773f4ab80ccd159416558d282b68cf09a9f4bc2e2fb3b7cd0cefd2536890",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed53/requests/request_0001.json",
+      "sha256": "4366244cf73a5df4b896c24887fe94afb7c4ea026471114e642ae1dd3ba867bb",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed53/requests/request_0002.json",
+      "sha256": "ab4a48f8c8b39d0ea81bcd372441e7b0fcfdadb5295b25b434aadda2f1793fee",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed53/requests/request_0003.json",
+      "sha256": "068608e31955d003d7032702301d98e7d7d866c1bdbe51aad9b1be42a710b208",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed71/requests/request_0001.json",
+      "sha256": "6bbcbba2cf769d5d3f03ca603c244162c310d49a6549bb209d68b380aea9eafc",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed71/requests/request_0002.json",
+      "sha256": "e40828dcf5508de3d57f916a44e47fd7f2a69df5714680d024053ebf3dc3eb68",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed71/requests/request_0003.json",
+      "sha256": "e41bcad76cd0b8cabad1d0c12396b374e49efe0cdb7a09f94cd31ef2af622cae",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed11/requests/request_0001.json",
+      "sha256": "8c6a09930f267272fe0ccea3b755042b8f48f65b14864f927b51393af777254d",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed11/requests/request_0002.json",
+      "sha256": "2850da6e6ce8546ff6f6c17b9d15a5b075d409a8f89a2da3a71ee84581d85ea5",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed23/requests/request_0001.json",
+      "sha256": "7f609e46bb3fd3290b14bad5e56905a49be14b7a52e307313e203d4b08c225e8",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed23/requests/request_0002.json",
+      "sha256": "7d3766f2e55ef15d6c86d672fe408c5882136a73c5a050c7cc4fdb1bf4459e7a",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed37/requests/request_0001.json",
+      "sha256": "ddaf566445b2ab01cc0ab7fdbbcebf7d43e13e498ee133e9e73dc4ca1e8f9c97",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed37/requests/request_0002.json",
+      "sha256": "437e5560aba79f85bc9a0da33b69eb7e83112d1bf075cf472a9dc4f6ee7a3223",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed53/requests/request_0001.json",
+      "sha256": "e7be8363812ea4809fb9606f090aa36a9ce9223f5840f37aadd779a1babf8de1",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed53/requests/request_0002.json",
+      "sha256": "db03462f7d9643ba57b37fa2c951977822cd85e6e34d57bb557b5a54b0eda07b",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed71/requests/request_0001.json",
+      "sha256": "edd0a011fd15f8ab9d246e80ff7b3037f5c7ecc3aa89713f769d62359b9bffb9",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed71/requests/request_0002.json",
+      "sha256": "9883da2c4dc49e0825d165bb67711b6fe44cb0bffe4cf002990ffde3cc15fa71",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/sib200_seed71/requests/request_0003.json",
+      "sha256": "c650a4afb4d8acc3ed0dddbb7becb6c05469d1eb990ec17049c6bb57264c5d30",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed11/requests/request_0001.json",
+      "sha256": "f7903a3b71e0519d16099a1cd86be5f0587cae7654f82a3b6acb27b2dd2f1c68",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed11/requests/request_0002.json",
+      "sha256": "f492e1d63612a8bd118d52c1dcf8d59672510098523f8e0568fb0b246468c1c9",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed23/requests/request_0001.json",
+      "sha256": "d04c48b3d4c6fd97016a1e0aedd7fbb2817a051aaa7e39693d4b6b1d736eab61",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed23/requests/request_0002.json",
+      "sha256": "58f91a5c6691808950215bf50eb04d53f9b5b38a96cee6009e37f5b127588932",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed37/requests/request_0001.json",
+      "sha256": "56ab391c458cf5df4db33dc0dfef16702657dfad1f91f2692eddcfd2746f26b0",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed37/requests/request_0002.json",
+      "sha256": "307ccd7bd3b62af5c9a12f51bf5b229e0dd933b22c61fc841ee985835495c62b",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed53/requests/request_0001.json",
+      "sha256": "3aa0e3ac19216e439c3934cfc80692202eb10256c51b670c280af3bbfe2c1766",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed53/requests/request_0002.json",
+      "sha256": "38ec3fb37434cf68adcacc33ca49bbbe044fbf829e7574e375a53e75ee2c17cf",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed71/requests/request_0001.json",
+      "sha256": "6b2a5fda010f566f34dc7181c1e17a5339bddff8be84fd096e073f01e5486bb8",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/ag_news_seed71/requests/request_0002.json",
+      "sha256": "4de09f46b6b903c39ec573259ee6ae2891541f2c9898b24ece8a20520679a620",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed11/requests/request_0001.json",
+      "sha256": "f62f6c1a8c3f36e75efc0dc15d8fd0f1f2e00de8cbc2eda011665eb5e35f1a15",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed11/requests/request_0002.json",
+      "sha256": "f88725128f4adf1944c830f850457c6865c12aab9c0e64001b2e448a2fb94923",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed11/requests/request_0003.json",
+      "sha256": "4b40a32616a0f3fa01892b52a278f2e786c5f855aa66b4baaae8262c2e450e50",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed23/requests/request_0001.json",
+      "sha256": "654ac3f4def6d090d46037a38607a70ff7866524a7807d2850be66f0f4c706b2",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed23/requests/request_0002.json",
+      "sha256": "d77a8850b28a14ded6126f97243429d88de5a08622d6f2bd15cdb6d6ecdc4512",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed23/requests/request_0003.json",
+      "sha256": "f11957bcfac4f1a248d698caf3f14c11b82c41e9636213d05b453673f25f724e",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed37/requests/request_0001.json",
+      "sha256": "b64c77589008096a712615c0512c501fa94d35375ac37a9217cb52ed54e7bc00",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed37/requests/request_0002.json",
+      "sha256": "57561cf6acfcc5e08dc08447f1e6d2be616bb2128045bd334e22e2009bcd3549",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed53/requests/request_0001.json",
+      "sha256": "5d8f0206c7fd0c145ab30b501f1c6bea599d24623051490e67ff16813136bc1a",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed53/requests/request_0002.json",
+      "sha256": "65d226baa711512a61de3cbfbf05a6b9048c2ead069c6a2342a334507bff85ba",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed53/requests/request_0003.json",
+      "sha256": "75dba0b9f1771730743188402d2905f2c5b0c99aca6da92d806e3ba660479de7",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed71/requests/request_0001.json",
+      "sha256": "aac9f6b9e60efed6ce6bb563c675dff8c67b40def7bf6a868a22ec9e8168e8f5",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed71/requests/request_0002.json",
+      "sha256": "f4f1dc3fec7480cac5418c931ba518456b36279ed304a5ccf1f101742b2e51e5",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/bills_seed71/requests/request_0003.json",
+      "sha256": "0ee3330c7f8872666d056aa43c21c60f7f8e85e1b5272fd549a2665a271f6b27",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed11/requests/request_0001.json",
+      "sha256": "9d36614c7a742f4f6f05f7c482b020ef18fe0f9cd34085a5146caa0a708dd1a2",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed11/requests/request_0002.json",
+      "sha256": "c7e313122affcd2c7610d8d9e5067a89d49ca3b5fa85153f8764e64b4b7fdb74",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed23/requests/request_0001.json",
+      "sha256": "c1892bf4bc1c29075fe82fa3c735a4e645d11974d6e42a5394f111ca8c68663c",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed23/requests/request_0002.json",
+      "sha256": "cf45630b394cce1a67f47f5ed11db49beb14ca9ff8590528f304efe63eb1b94c",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed37/requests/request_0001.json",
+      "sha256": "778bc968fdc0ffd519d4f43cd3c66703b23e5454754dab8b4571b8c9523a58dd",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed37/requests/request_0002.json",
+      "sha256": "2d8ce2cbc8bd854bc90188130ae0767eae83647321b002f6329892e78a23648a",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed53/requests/request_0001.json",
+      "sha256": "7ca95c6c4e5ac97f11f202560c3ae86d142ee868b751282c6fca558fc6c51e04",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed53/requests/request_0002.json",
+      "sha256": "29e3ec8dd125bf6b0dcab7c9d8f88795ae636a0c0103fd9668c7f175eeebc20b",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed71/requests/request_0001.json",
+      "sha256": "52afe3db84fbe06ffaf897a7e73c86f85bb7446e36a1dd1dc2a0dc0815c881a6",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed71/requests/request_0002.json",
+      "sha256": "855f5d137c422c25b0fbf4a6b09d49d39159c915355927546ef3a86ed76a258d",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed11/requests/request_0001.json",
+      "sha256": "85922b8b5d2581f54c4d39ccdfe18e46b12b637d2f0f57eb459b4bfce952054d",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed11/requests/request_0002.json",
+      "sha256": "1598b3107a88a5a97e64cae5fa15373158ce2991fdb953689fd2e1b4166fbedc",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed23/requests/request_0001.json",
+      "sha256": "2f376b4d57891bdff90fd50f233b469b678fee0df6bd2fda748900edc4a3afd1",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed23/requests/request_0002.json",
+      "sha256": "32ab257ec903619ad2b0cb59bd022e2630b5e3c384a0cd1b8293f393ccf732d3",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed37/requests/request_0001.json",
+      "sha256": "0bf78750c150729e5ad2942efdd6bb62c21d141490c97d40e45e6aa594228b9a",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed37/requests/request_0002.json",
+      "sha256": "640feffee64a84732d1c12d7f57a14442286f1db1bacb2f5ed7eb3b9091d41f7",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed53/requests/request_0001.json",
+      "sha256": "f74b5c3a351ea30f81bd8046a72eaa92486b59e590d3549f11410ef60c691b0c",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed53/requests/request_0002.json",
+      "sha256": "5dba7dbb86b1f7800b73a748813c898d940e136ad490dbb9880221492a0b2652",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed71/requests/request_0001.json",
+      "sha256": "35e2da45728ca49d8718864a7a40e843cbe2f16c2936b56a6f0cb25dc03ea598",
+      "kind": "initial",
+      "prefix": "Create an Open-K topic codebook from the induction documents below. Use no gold labels, benchmark category names, target K, or external taxonomy. Discover a compact set of recurring topics yourself. Each topic must provide a name, definition, and all useful core_keywords. Return JSON only as {\"topics\":[{\"topic_id\":\"T1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/sib200_seed71/requests/request_0002.json",
+      "sha256": "da68664dd821f28d59a4d7202f48c494d7761a1e9f6cec30eb5c330f2048a4e9",
+      "kind": "residual",
+      "prefix": "Extend the current Open-K codebook using only the residual documents. The full current codebook is shown below. Return an empty topics list when the residual does not contain a recurring theme genuinely absent from that codebook. Do not rename, duplicate, or split an existing topic. Return JSON only as {\"topics\":[{\"topic_id\":\"R1\",\"name\":\"...\",\"definition\":\"...\",\"core_keywords\":[\"...\"]}]}."
+    }
+  ]
+}

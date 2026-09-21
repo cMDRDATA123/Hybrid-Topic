@@ -1,0 +1,4 @@
+include examples/quickstart.ipynb
+include examples/basic_workflow.py
+include hybrid_topic/model_catalog.json
+include examples/cloud_workflow.py

@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use Hybrid Topic, please cite this software."
+type: software
+title: "Hybrid Topic"
+version: 0.1.0
+authors:
+  - family-names: Ren
+    given-names: Jiashuo
+    affiliation: University of Stirling
+repository-code: "https://github.com/cMDRDATA123/Hybrid-Topic"
+url: "https://github.com/cMDRDATA123/Hybrid-Topic"
+license: MIT

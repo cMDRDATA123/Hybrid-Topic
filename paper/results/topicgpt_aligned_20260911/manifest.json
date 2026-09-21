@@ -1,0 +1,20 @@
+{
+  "metric_version": "topicgpt-weighted-best-f1-v1",
+  "primary_metric": "gold-class-size-weighted best class-cluster F1 (TopicGPT implementation)",
+  "formula": "sum_c (n_c/N) * max_k (2*n_ck/(n_c+n_k))",
+  "columns": {
+    "harmonic_purity": "current main HMP, equal to topicgpt_weighted_best_f1",
+    "legacy_global_hmp": "previous global purity/inverse-purity harmonic mean"
+  },
+  "decision": "2026-09-11 author-directed alignment to prior research after both definitions were inspected",
+  "numeric_input_sha256": "957b7699354be598b720f6cdc15d55b67b46dbaced079ffa036dcc0d9ab3aa19",
+  "alignment_builder_sha256": "67dad29608a2f1d9406a3d408b1506932f033540d7f34af398c241dda50651d0",
+  "reference_revision": "450564466abe72091797c728a90cfeec8ba3d651",
+  "scope": "all 240 eligible test configurations; unchanged predictions, -1 partition, coverage, ARI and NMI",
+  "builder_sha256": "2bdc8c1d9f018daef7d93dc722344b3a843d5ad90f1163a4ae9bf7ed1ed541fa",
+  "outputs": {
+    "tables.md": "165be49e709ded20629454da1a19d59fd691e612ed2fbfab7ba7df6bacae9a0c",
+    "all_methods.csv": "838802d4c273e9941cbdc4f4aa9989351e70daffc6e5dd0bda186d3f6132782d",
+    "per_run_metrics.csv": "1687c14a9c47267d5c6dc2db786d31b4f0758e9faa1328b8141ec7099607dbd4"
+  }
+}

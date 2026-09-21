@@ -1,0 +1,7 @@
+# Fixed-codebook propagation ablation v1
+
+Authorized by user after WP5-04 discussion. Supplemental exploratory experiment on previously inspected development collections. No new generation, embedding, parameter selection, residual discovery or primary manuscript changes.
+
+Plan: all 40 final saved codebooks (two cloud generators x four datasets x five seeds). Freeze final codebooks, document/topic embeddings, top-five seed selection, reference threshold, alpha=.70 and singleton query rule. Off uses seed matrix Y; on uses saved final F, verified against recomputed diffusion. Query scores use identical alpha-scaled weighted reference lookup and positive-score assignment; no nearest-topic fallback. Final codebook selection already depended on original full pipeline, so this is conditional propagation contribution, not end-to-end system ablation.
+
+Verify original artifacts/cache hashes and reproduce every original on prediction exactly before scoring. Generate both sets of predictions without reading gold; seal all prediction hashes before separate scoring. Primary outcomes: existing TopicGPT weighted best-pair F1 HMP and coverage on original eligible test population, including -1 as shared cluster; ARI/NMI secondary. Report all runs, means/sample SD, paired deltas. Common-assigned subset is supplementary selection-conditioned diagnostic only. Do not tune thresholds to match coverage. No significance or independent generalization claims.

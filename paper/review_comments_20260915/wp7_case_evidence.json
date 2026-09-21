@@ -1,0 +1,191 @@
+{
+  "selection": "MASSIVE: largest absolute generator mean HMP difference among four collections; first scheduled run (seed11) for descriptions; all five runs for topic counts. Topic descriptions illustrate scope, not an isolated causal effect.",
+  "cases": [
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed11/model/model.json",
+      "sha256": "624f7b546b5c62541b81ad9ee96a38a981e4d6303019794b9a14c495d90ee5f1",
+      "seed": 11,
+      "topics": 11,
+      "selected_topics": [
+        {
+          "topic_id": "T5",
+          "name": "Alarms and Reminders",
+          "definition": "Setting, checking, and managing alarms, reminders, calendar events, and notifications.",
+          "core_keywords": [
+            "alarm",
+            "reminder",
+            "提醒",
+            "闹钟",
+            "日程",
+            "日历",
+            "event",
+            "schedule",
+            "set alarm",
+            "delete reminder"
+          ]
+        },
+        {
+          "topic_id": "T8",
+          "name": "News and Social Media",
+          "definition": "Requests for news updates, social media posts, status changes, and online information tracking.",
+          "core_keywords": [
+            "news",
+            "social media",
+            "微博",
+            "推特",
+            "facebook",
+            "instagram",
+            "新闻",
+            "发布",
+            "状态",
+            "热点",
+            "头条",
+            "微博发",
+            "社交媒体"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed23/model/model.json",
+      "sha256": "913ce1d1bd3c08a82aba5ecf8cc2e36ce75460f54964ea02283555ea95acc7b8",
+      "seed": 23,
+      "topics": 11,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed37/model/model.json",
+      "sha256": "98377a093464cd11a781349715cbf131c8e5f57fc26fafb368ae8ef87a632686",
+      "seed": 37,
+      "topics": 11,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed53/model/model.json",
+      "sha256": "28c631ff0a3ad0047e908f9a50a8a8bcd8d0c7112da59cbd512337ae5a103607",
+      "seed": 53,
+      "topics": 11,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_cloud_20260906/cloud/massive_seed71/model/model.json",
+      "sha256": "bf1708a6519f7e53fb0d265ae5481de22d8656523e75fe267cda86cb10fa4218",
+      "seed": 71,
+      "topics": 14,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed11/model/model.json",
+      "sha256": "42e82044d55b0a031bcc09ba017a3efeb9f4f6f21e0dba8da3deecc1126a21b5",
+      "seed": 11,
+      "topics": 24,
+      "selected_topics": [
+        {
+          "topic_id": "T3",
+          "name": "闹钟与定时提醒",
+          "definition": "创建、查看、修改、取消或静音基于时间或周期的闹钟与定时提醒。",
+          "core_keywords": [
+            "闹钟",
+            "叫醒",
+            "定时",
+            "提醒",
+            "几点响",
+            "取消闹钟",
+            "alarm",
+            "wake me",
+            "timer",
+            "remind at",
+            "silence alarm"
+          ]
+        },
+        {
+          "topic_id": "T4",
+          "name": "日历、会议与事件安排",
+          "definition": "在日历中创建、查看、修改或删除会议、约会、生日、聚会及其他日程事件。",
+          "core_keywords": [
+            "日历",
+            "会议",
+            "约会",
+            "活动",
+            "日程",
+            "生日",
+            "聚会",
+            "安排",
+            "calendar",
+            "meeting",
+            "event",
+            "appointment",
+            "schedule"
+          ]
+        },
+        {
+          "topic_id": "T7",
+          "name": "新闻与时事资讯",
+          "definition": "获取本地、国际、政治、财经、科技、体育或专题新闻的最新报道与摘要。",
+          "core_keywords": [
+            "新闻",
+            "头条",
+            "最新消息",
+            "时事",
+            "报道",
+            "选举",
+            "总统",
+            "突发新闻",
+            "news",
+            "latest",
+            "breaking news",
+            "election",
+            "current affairs"
+          ]
+        },
+        {
+          "topic_id": "T8",
+          "name": "社交媒体操作与动态",
+          "definition": "查看社交平台动态，发布状态、微博、推文或帖子，并发送社交媒体投诉或消息。",
+          "core_keywords": [
+            "社交媒体",
+            "微博",
+            "推特",
+            "脸书",
+            "Instagram",
+            "Pinterest",
+            "状态",
+            "发帖",
+            "tweet",
+            "post",
+            "social media",
+            "status"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed23/model/model.json",
+      "sha256": "b6e09e3d725b67c0dac83dbecc9263795a62c2e39b18ac858dd937e714ae83e0",
+      "seed": 23,
+      "topics": 28,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed37/model/model.json",
+      "sha256": "3243e6a656440e16913b135e1d47f0d6fe97cacc64ce0ef15318d9b4c080ae6b",
+      "seed": 37,
+      "topics": 22,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed53/model/model.json",
+      "sha256": "ce89b493614935246a9df3415e6427fe4f43e87a1c68a7152643f0974cbd8e2c",
+      "seed": 53,
+      "topics": 28,
+      "selected_topics": []
+    },
+    {
+      "path": "runs/release_luna_20260906/luna/massive_seed71/model/model.json",
+      "sha256": "a4b66a384eabaa649b6a64ed0e85914b616089b407519e60b283a1f5a330cced",
+      "seed": 71,
+      "topics": 24,
+      "selected_topics": []
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "inputs": {
+    "GPT-4.1 mini": {
+      "metrics_sha256": "c3fa19be2a30fdf008115c356897273b03e648f045659490a662c41f213e1166",
+      "scoring_manifest_sha256": "363a1ade13f5848a7d2fa3c6fd6d3abcc88f7d92c547da69a26738e512963be9",
+      "prediction_freeze_sha256": "71018232f27127e4b42190fecc90d046c32d68b364881481e047aaf777c7ca54"
+    },
+    "Luna": {
+      "metrics_sha256": "44b7c06ce101ea8e40dd08643700b3c23f5badc5f4c1bf861d32681d3d907763",
+      "scoring_manifest_sha256": "a056c577afb757868f403dde6e8e660997f9ba04e15a36ec6f9c813bcac768d4",
+      "prediction_freeze_sha256": "cf6a7716ee572323d44789aa92a1c06033d7060ba85165dc15cb8e419e05fc6a"
+    }
+  },
+  "metric_definitions": "HMP primary; coverage alongside; ARI/NMI secondary",
+  "scope": "eligible test documents; five fixed seeds; release revalidation on previously seen data",
+  "builder_sha256": "2bdc8c1d9f018daef7d93dc722344b3a843d5ad90f1163a4ae9bf7ed1ed541fa",
+  "outputs": {
+    "tables.md": "714588e3100ea69ed62ce9f8c4774ff6f6983fbc647cb59e38405ab2eb35bde2",
+    "all_methods.csv": "aa7797eaff4adb1d207aff8372bd565faba90c73b34f143fb2ba1d77bfb7d4fd",
+    "per_run_metrics.csv": "465aa17ffd99eb14ff48d12d22a327f3bb4de38ee408c60ef24aed399fccb0cb"
+  }
+}

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hybrid-topic"
+version = "0.1.0"
+description = "LLM-generated topic codebooks with local embedding assignment and residual topic discovery."
+readme = "README.md"
+authors = [{name = "Jiashuo Ren"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "scipy",
+]
+
+[project.urls]
+Repository = "https://github.com/cMDRDATA123/Hybrid-Topic"
+Issues = "https://github.com/cMDRDATA123/Hybrid-Topic/issues"
+
+[project.optional-dependencies]
+embeddings = ["sentence-transformers"]
+openai = ["openai", "tiktoken>=0.7"]
+anthropic = ["anthropic>=1.4.0"]
+transformers = ["transformers", "torch"]
+mlx = ["mlx", "mlx-lm>=0.26.4"]
+research = ["datasets"]
+notebook = ["jupyterlab", "ipykernel", "nbconvert"]
+
+[tool.setuptools.packages.find]
+include = ["hybrid_topic", "experiments"]
+
+[tool.setuptools.package-data]
+hybrid_topic = ["model_catalog.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

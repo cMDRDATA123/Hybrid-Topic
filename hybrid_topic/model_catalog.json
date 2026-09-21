@@ -1,0 +1,883 @@
+{
+  "schema_version": 1,
+  "snapshot_date": "2026-09-06",
+  "purpose": "Runtime-replaceable provider/model inventory and verified capability configuration for G-08.",
+  "policy": {
+    "official_sources_only": true,
+    "unknown_capabilities_require_explicit_configuration": true,
+    "model_name_suffixes_are_never_used_to_guess_limits": true,
+    "refresh_before_release": true,
+    "live_inventory_requires_provider_authentication_when_available": true
+  },
+  "providers": {
+    "openai": {
+      "inventory_source": "https://developers.openai.com/api/docs/models/all",
+      "runtime_inventory_endpoint": "https://api.openai.com/v1/models",
+      "capability_source_pattern": "https://developers.openai.com/api/docs/models/{model}",
+      "models": {
+        "gpt-6-astra": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.6-sol": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 1050000,
+          "max_output_tokens": 128000,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-sol",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-5.6-terra": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 1050000,
+          "max_output_tokens": 128000,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-terra",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-5.6-luna": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 1050000,
+          "max_output_tokens": 128000,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [
+            "none",
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-5.6-luna",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-5.5": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.5-pro": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.4": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.4-pro": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.4-mini": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.4-nano": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.3-codex": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.2": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.2-pro": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5.1": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5-mini": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5-nano": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-5-pro": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "o3-pro": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "o3": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "gpt-4.1": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 1047576,
+          "max_output_tokens": 32768,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-4.1-mini": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 1047576,
+          "max_output_tokens": 32768,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-4o": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 128000,
+          "max_output_tokens": 16384,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-4o-mini": {
+          "status": "active",
+          "inventory_source": "https://developers.openai.com/api/docs/models/all",
+          "context_window": 128000,
+          "max_output_tokens": 16384,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-4.1-2025-04-14": {
+          "context_window": 1047576,
+          "max_output_tokens": 32768,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-2025-04-14",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-2025-04-14",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-2025-04-14",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-4.1-mini-2025-04-14": {
+          "context_window": 1047576,
+          "max_output_tokens": 32768,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini-2025-04-14",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini-2025-04-14",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4.1-mini-2025-04-14",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "gpt-4o-mini-2024-07-18": {
+          "context_window": 128000,
+          "max_output_tokens": 16384,
+          "tokenizer_encoding": "o200k_base",
+          "reasoning_efforts": [],
+          "source": "provider_model_catalog",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini-2024-07-18",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini-2024-07-18",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "tokenizer_encoding": {
+              "source": "https://raw.githubusercontent.com/openai/tiktoken/main/tiktoken/model.py",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://developers.openai.com/api/docs/models/gpt-4o-mini-2024-07-18",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        }
+      },
+      "notes": "Image, realtime, audio, embedding, moderation and deprecated families remain in the official inventory but are not topic-generation candidates. Add a model only after its official page supplies usable text-generation limits."
+    },
+    "anthropic": {
+      "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "runtime_inventory_endpoint": "https://api.anthropic.com/v1/models",
+      "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "models": {
+        "claude-fable-5-1": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max",
+            "xhigh"
+          ]
+        },
+        "claude-fable-5": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max",
+            "xhigh"
+          ]
+        },
+        "claude-opus-5": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max",
+            "xhigh"
+          ]
+        },
+        "claude-opus-4-8": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max",
+            "xhigh"
+          ]
+        },
+        "claude-opus-4-7": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max",
+            "xhigh"
+          ]
+        },
+        "claude-opus-4-6": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        "claude-opus-4-5-20251101": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "claude-sonnet-5": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max",
+            "xhigh"
+          ]
+        },
+        "claude-sonnet-4-6": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "medium",
+            "high",
+            "max"
+          ]
+        },
+        "claude-sonnet-4-5-20250929": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": []
+        },
+        "claude-haiku-4-5-20251001": {
+          "status": "active",
+          "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "reasoning_efforts": {
+              "source": "https://platform.claude.com/docs/en/build-with-claude/effort",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": []
+        }
+      },
+      "notes": "Anthropic publishes lifecycle state separately from model capability pages. Context and output limits must be filled from the individual model page or API metadata before automatic budgeting."
+    },
+    "xai": {
+      "inventory_source": "https://docs.x.ai/developers/models",
+      "runtime_inventory_endpoint": "https://api.x.ai/v1/language-models",
+      "models": {
+        "grok-4.6": {
+          "status": "active",
+          "inventory_source": "https://docs.x.ai/developers/models",
+          "context_window": 500000,
+          "reasoning_efforts": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "source": "https://docs.x.ai/developers/models",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://docs.x.ai/developers/models",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://docs.x.ai/developers/models",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "grok-4.6-latest": {
+          "status": "active",
+          "inventory_source": "https://docs.x.ai/developers/models",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "grok-4.3": {
+          "status": "active",
+          "inventory_source": "https://docs.x.ai/developers/models",
+          "context_window": 1000000,
+          "reasoning_efforts": [
+            "none",
+            "low",
+            "medium",
+            "high"
+          ],
+          "source": "https://docs.x.ai/developers/models/grok-4.3",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://docs.x.ai/developers/models/grok-4.3",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://docs.x.ai/developers/models/grok-4.3",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        },
+        "grok-4.3-latest": {
+          "status": "active",
+          "inventory_source": "https://docs.x.ai/developers/models",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {}
+        },
+        "grok-build-0.1": {
+          "status": "active",
+          "inventory_source": "https://docs.x.ai/developers/models",
+          "context_window": 256000,
+          "source": "https://docs.x.ai/developers/models",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://docs.x.ai/developers/models",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            }
+          }
+        }
+      },
+      "notes": "The language-model endpoint is account-scoped; a catalog refresh must preserve the returned IDs and aliases rather than assuming every documented alias is enabled for every account."
+    },
+    "deepseek": {
+      "inventory_source": "https://api-docs.deepseek.com/api/list-models/",
+      "runtime_inventory_endpoint": "https://api.deepseek.com/models",
+      "capability_source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "deprecated_or_legacy": {
+        "deepseek-chat": "legacy alias; provider announced discontinuation on 2026-07-24",
+        "deepseek-reasoner": "legacy alias; provider announced discontinuation on 2026-07-24"
+      },
+      "models": {
+        "deepseek-v4-flash": {
+          "status": "active",
+          "inventory_source": "https://api-docs.deepseek.com/api/list-models/",
+          "context_window": 1000000,
+          "max_output_tokens": 384000,
+          "reasoning_modes": [
+            "thinking",
+            "non-thinking"
+          ],
+          "source": "https://api-docs.deepseek.com/quick_start/pricing",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://api-docs.deepseek.com/quick_start/pricing",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://api-docs.deepseek.com/quick_start/pricing",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://api-docs.deepseek.com/zh-cn/api/create-chat-completion/",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "deepseek-v4-pro": {
+          "status": "active",
+          "inventory_source": "https://api-docs.deepseek.com/api/list-models/",
+          "context_window": 1000000,
+          "max_output_tokens": 384000,
+          "reasoning_modes": [
+            "thinking",
+            "non-thinking"
+          ],
+          "source": "https://api-docs.deepseek.com/quick_start/pricing",
+          "modality": "text_generation",
+          "capability_status": "partial",
+          "field_provenance": {
+            "context_window": {
+              "source": "https://api-docs.deepseek.com/quick_start/pricing",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "max_output_tokens": {
+              "source": "https://api-docs.deepseek.com/quick_start/pricing",
+              "recorded_at": "2026-09-06",
+              "verification": "inherited_snapshot; not reverified by inventory refresh"
+            },
+            "reasoning_efforts": {
+              "source": "https://api-docs.deepseek.com/zh-cn/api/create-chat-completion/",
+              "verified_at": "2026-09-07"
+            }
+          },
+          "reasoning_efforts": [
+            "low",
+            "high",
+            "max"
+          ]
+        },
+        "deepseek-chat": {
+          "status": "legacy_unverified",
+          "inventory_source": "https://api-docs.deepseek.com/api/list-models/",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {},
+          "lifecycle_note": "legacy alias; provider announced discontinuation on 2026-07-24"
+        },
+        "deepseek-reasoner": {
+          "status": "legacy_unverified",
+          "inventory_source": "https://api-docs.deepseek.com/api/list-models/",
+          "modality": "text_generation",
+          "capability_status": "unverified",
+          "field_provenance": {},
+          "lifecycle_note": "legacy alias; provider announced discontinuation on 2026-07-24"
+        }
+      },
+      "notes": "DeepSeek documents both OpenAI-format and Anthropic-format endpoints. The catalog keeps legacy aliases for migration diagnostics but does not make them default candidates."
+    }
+  },
+  "configuration_revision": "audit-fixes-20260907-v2"
+}

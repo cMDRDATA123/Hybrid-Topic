@@ -1,0 +1,136 @@
+{
+  "snapshot_date": "2026-09-06",
+  "purpose": "Provider/model inventory and capability provenance for G-08.",
+  "scope": "text_generation_candidates_for_topic_modeling",
+  "policy": {
+    "official_sources_only": true,
+    "unknown_capabilities_require_explicit_configuration": true,
+    "model_name_suffixes_are_never_used_to_guess_limits": true,
+    "refresh_before_release": true,
+    "live_inventory_requires_provider_authentication_when_available": true
+  },
+  "providers": {
+    "openai": {
+      "inventory_source": "https://developers.openai.com/api/docs/models/all",
+      "runtime_inventory_endpoint": "https://api.openai.com/v1/models",
+      "capability_source_pattern": "https://developers.openai.com/api/docs/models/{model}",
+      "topic_generation_candidates": [
+        "gpt-6-astra",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-5.6-luna",
+        "gpt-5.5",
+        "gpt-5.5-pro",
+        "gpt-5.4",
+        "gpt-5.4-pro",
+        "gpt-5.4-mini",
+        "gpt-5.4-nano",
+        "gpt-5.3-codex",
+        "gpt-5.2",
+        "gpt-5.2-pro",
+        "gpt-5.1",
+        "gpt-5",
+        "gpt-5-mini",
+        "gpt-5-nano",
+        "gpt-5-pro",
+        "o3-pro",
+        "o3",
+        "gpt-4.1",
+        "gpt-4.1-mini",
+        "gpt-4o",
+        "gpt-4o-mini"
+      ],
+      "verified_capabilities_in_code": [
+        "gpt-4.1",
+        "gpt-4.1-2025-04-14",
+        "gpt-4.1-mini",
+        "gpt-4.1-mini-2025-04-14",
+        "gpt-4o",
+        "gpt-4o-mini",
+        "gpt-4o-mini-2024-07-18",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-5.6-luna"
+      ],
+      "notes": "Image, realtime, audio, embedding, moderation and deprecated families remain in the official inventory but are not topic-generation candidates. Add a model only after its official page supplies usable text-generation limits."
+    },
+    "anthropic": {
+      "inventory_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "runtime_inventory_endpoint": "https://api.anthropic.com/v1/models",
+      "topic_generation_candidates": [
+        "claude-fable-5-1",
+        "claude-fable-5",
+        "claude-opus-5",
+        "claude-opus-4-8",
+        "claude-opus-4-7",
+        "claude-opus-4-6",
+        "claude-opus-4-5-20251101",
+        "claude-sonnet-5",
+        "claude-sonnet-4-6",
+        "claude-sonnet-4-5-20250929",
+        "claude-haiku-4-5-20251001"
+      ],
+      "lifecycle_source": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "verified_capabilities_in_code": [],
+      "notes": "Anthropic publishes lifecycle state separately from model capability pages. Context and output limits must be filled from the individual model page or API metadata before automatic budgeting."
+    },
+    "xai": {
+      "inventory_source": "https://docs.x.ai/developers/models",
+      "runtime_inventory_endpoint": "https://api.x.ai/v1/language-models",
+      "topic_generation_candidates": [
+        "grok-4.6",
+        "grok-4.6-latest",
+        "grok-4.3",
+        "grok-4.3-latest",
+        "grok-build-0.1"
+      ],
+      "verified_capabilities": {
+        "grok-4.6": {
+          "context_window": 500000,
+          "reasoning_efforts": ["none", "low", "medium", "high"],
+          "source": "https://docs.x.ai/developers/models"
+        },
+        "grok-4.3": {
+          "context_window": 1000000,
+          "reasoning_efforts": ["none", "low", "medium", "high"],
+          "source": "https://docs.x.ai/developers/models/grok-4.3"
+        },
+        "grok-build-0.1": {
+          "context_window": 256000,
+          "source": "https://docs.x.ai/developers/models"
+        }
+      },
+      "notes": "The language-model endpoint is account-scoped; a catalog refresh must preserve the returned IDs and aliases rather than assuming every documented alias is enabled for every account."
+    },
+    "deepseek": {
+      "inventory_source": "https://api-docs.deepseek.com/api/list-models/",
+      "runtime_inventory_endpoint": "https://api.deepseek.com/models",
+      "capability_source": "https://api-docs.deepseek.com/quick_start/pricing",
+      "topic_generation_candidates": [
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "deepseek-chat",
+        "deepseek-reasoner"
+      ],
+      "verified_capabilities": {
+        "deepseek-v4-flash": {
+          "context_window": 1000000,
+          "max_output_tokens": 384000,
+          "reasoning_modes": ["thinking", "non-thinking"],
+          "source": "https://api-docs.deepseek.com/quick_start/pricing"
+        },
+        "deepseek-v4-pro": {
+          "context_window": 1000000,
+          "max_output_tokens": 384000,
+          "reasoning_modes": ["thinking", "non-thinking"],
+          "source": "https://api-docs.deepseek.com/quick_start/pricing"
+        }
+      },
+      "deprecated_or_legacy": {
+        "deepseek-chat": "legacy alias; provider announced discontinuation on 2026-07-24",
+        "deepseek-reasoner": "legacy alias; provider announced discontinuation on 2026-07-24"
+      },
+      "notes": "DeepSeek documents both OpenAI-format and Anthropic-format endpoints. The catalog keeps legacy aliases for migration diagnostics but does not make them default candidates."
+    }
+  }
+}
