@@ -1,5 +1,7 @@
 # Hybrid Topic
 
+English | [简体中文](README.zh-CN.md)
+
 Hybrid Topic is a Python/Jupyter topic modeling prototype. A configured language
 model discovers named topic definitions; local embeddings and graph diffusion
 assign documents. It accepts a supplied topic codebook or an optional analysis
