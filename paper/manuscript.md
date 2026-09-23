@@ -302,7 +302,7 @@ The experiments use existing benchmark collections. Cloud generation sends the s
 
 ## AI assistance disclosure
 
-AI assistance was used in coding, debugging, experimental auditing and manuscript drafting.
+AI assistance was used in coding, debugging and experimental auditing.
 
 ## References
 
