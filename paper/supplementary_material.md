@@ -4,7 +4,7 @@ This companion retains complete additional comparisons and implementation detail
 
 ## Generation cost accounting / 生成费用核算
 
-Table 4 uses the request records for the twenty fitted runs in each cloud batch. Summing all 55 GPT-4.1 mini request records gives 782,176 input tokens and 19,476 output tokens; all 44 Luna request records give 786,151 input tokens and 37,296 output tokens. Every request has recorded usage. Initial discovery and topic-supplementation requests are both included. Mean cost per fit is the batch estimate divided by twenty, averaging over the four collection sizes in Table 1.
+Table 5 uses the request records for the twenty fitted runs in each cloud batch. Summing all 55 GPT-4.1 mini request records gives 782,176 input tokens and 19,476 output tokens; all 44 Luna request records give 786,151 input tokens and 37,296 output tokens. Every request has recorded usage. Initial discovery and topic-supplementation requests are both included. Mean cost per fit is the batch estimate divided by twenty, averaging over the four collection sizes in Table 1.
 
 | Generator | Fits | Requests | Input tokens | Output tokens | Historical API estimate (USD) |
 |---|---:|---:|---:|---:|---:|
@@ -13,7 +13,7 @@ Table 4 uses the request records for the twenty fitted runs in each cloud batch.
 
 The amounts come from the preserved GPT-4.1 mini usage summary and Luna usage summary, calculated at the historical standard uncached rates recorded for the experiments. They are estimates rather than invoices and exclude cache discounts, local embedding, graph computation, and other development runs. They describe the collection sizes and configurations used here. Full cost comparisons across systems would require the same data, hardware, and pricing assumptions.
 
-表4统计两批各二十次拟合中的初始发现与主题补充请求。全部99份请求均有用量记录，累计token与两批汇总一致。每次拟合均值为整批估算除以二十，涵盖表1中不同大小的四份语料。金额采用实验保存的历史标准非缓存费率，属于生成API估算费用；不含缓存折扣、本地编码、图计算和其他开发运行。原始请求与汇总记录保留上述统计范围，跨系统总成本比较需要统一数据、硬件和计价条件。
+表5统计两批各二十次拟合中的初始发现与主题补充请求。全部99份请求均有用量记录，累计token与两批汇总一致。每次拟合均值为整批估算除以二十，涵盖表1中不同大小的四份语料。mini采用每百万输入/输出token 0.40/1.60美元，Luna采用0.20/1.20美元。表中将全部输入按普通非缓存输入计价，作为统一比较口径；未计入缓存读取折扣或缓存写入溢价。它是生成API估算，不含本地编码、图计算和其他开发运行。Luna的缓存写入计价差异详见费用复核记录。原始请求与汇总记录保留上述统计范围，跨系统总成本比较需要统一数据、硬件和计价条件。
 
 
 ## English

@@ -239,9 +239,9 @@ The effect on grouping quality varied by collection. Both generators obtained hi
 
 ### 6.1 Low topic-generation costs
 
-Hybrid Topic uses the language model to discover topics and add any missing themes. Once these descriptions are available, the encoder and graph assign documents to topics. This division keeps generation calls concentrated in topic discovery. In the main compact-prompt experiments, GPT-4.1 mini made 55 requests across twenty fits and Luna made 44. Using the historical standard rates recorded for these runs, the estimated generation API costs were 0.3440 and 0.2020 US dollars for the respective batches (Table 5).
+Hybrid Topic uses the language model to discover topics and add any missing themes. Once these descriptions are available, the encoder and graph assign documents to topics. This division keeps generation calls concentrated in topic discovery. In the main compact-prompt experiments, GPT-4.1 mini made 55 requests across twenty fits and Luna made 44. At the published standard rates, treating every input token as ordinary uncached input gives estimated generation costs of 0.3440 and 0.2020 US dollars for the respective batches (Table 5).
 
-*Table 5. Estimated generation API cost in US dollars. Each batch comprises five fits on each of the four collections. Estimates use recorded token usage and historical standard uncached rates and exclude local encoding and graph computation.*
+*Table 5. Estimated generation API cost in US dollars. Each batch comprises five fits on each of the four collections. Estimates charge all recorded input tokens at the standard input rate and all output tokens at the output rate, without cache-read discounts or cache-write premiums. They exclude local encoding and graph computation.*
 
 | Generator | Requests | Batch cost | Mean per fit |
 |---|---:|---:|---:|
