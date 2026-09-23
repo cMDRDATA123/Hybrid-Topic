@@ -11,17 +11,9 @@
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
 \usepackage{iftex}
 \ifPDFTeX
-  \usepackage[T1]{fontenc}
-  \usepackage[utf8]{inputenc}
-  \usepackage{textcomp} % provide euro and other symbols
-\else % if luatex or xetex
-  \usepackage{unicode-math} % this also loads fontspec
-  \defaultfontfeatures{Scale=MatchLowercase}
-  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
-\fi
-\usepackage{lmodern}
-\ifPDFTeX\else
-  % xetex/luatex font selection
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -71,8 +63,7 @@
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \usepackage{newtxtext,newtxmath,needspace,etoolbox}
 \pagestyle{plain}
-\DeclareUnicodeCharacter{2192}{\ensuremath{\rightarrow}}
-\DeclareUnicodeCharacter{2212}{\ensuremath{-}}
+
 \setlength{\emergencystretch}{3em}
 \widowpenalty=10000\clubpenalty=10000
 \usepackage{xurl}
@@ -281,7 +272,7 @@ unassigned documents.
 Given an induction corpus, Hybrid Topic constructs a topic set and
 assigns topics to documents. Each topic comprises a name, definition,
 and keywords; together they form the topic codebook. Each document
-receives a topic ID or −1 if unassigned. Users may supply an analytical
+receives a topic ID or \ensuremath{-}1 if unassigned. Users may supply an analytical
 focus or an existing topic set. The generator and encoder retain their
 pretrained weights.
 
@@ -582,7 +573,7 @@ measures describe different aspects of the output: HMP, ARI, and NMI
 assess grouping, while coverage shows how much of the collection
 receives an assignment.
 
-Full-test-set scoring treats −1 as a shared predicted group, so HMP is
+Full-test-set scoring treats \ensuremath{-}1 as a shared predicted group, so HMP is
 reported alongside coverage. Tables present means and sample standard
 deviations across five runs; propagation comparisons are paired within
 runs. Scores on the jointly assigned subset are supplementary
@@ -687,24 +678,24 @@ HMP off
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
 HMP on
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Coverage off → on
+Coverage off \ensuremath{\rightarrow} on
 \end{minipage} \\
 \midrule\noalign{}
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-GPT-4.1 mini & Bills & 0.3640 ± 0.0246 & 0.3647 ± 0.0301 & 0.7755 →
+GPT-4.1 mini & Bills & 0.3640 ± 0.0246 & 0.3647 ± 0.0301 & 0.7755 \ensuremath{\rightarrow}
 0.9388 \\
-GPT-4.1 mini & SIB-200 & 0.4859 ± 0.0374 & 0.5009 ± 0.0442 & 0.6986 →
+GPT-4.1 mini & SIB-200 & 0.4859 ± 0.0374 & 0.5009 ± 0.0442 & 0.6986 \ensuremath{\rightarrow}
 0.9643 \\
-GPT-4.1 mini & MASSIVE & 0.4548 ± 0.0288 & 0.4896 ± 0.0310 & 0.7211 →
+GPT-4.1 mini & MASSIVE & 0.4548 ± 0.0288 & 0.4896 ± 0.0310 & 0.7211 \ensuremath{\rightarrow}
 0.9500 \\
-GPT-4.1 mini & AG News & 0.5382 ± 0.0443 & 0.7177 ± 0.0454 & 0.7697 →
+GPT-4.1 mini & AG News & 0.5382 ± 0.0443 & 0.7177 ± 0.0454 & 0.7697 \ensuremath{\rightarrow}
 1.0000 \\
-Luna & Bills & 0.4228 ± 0.0313 & 0.4181 ± 0.0154 & 0.8596 → 0.9388 \\
-Luna & SIB-200 & 0.4490 ± 0.0191 & 0.4759 ± 0.0145 & 0.8100 → 0.9643 \\
-Luna & MASSIVE & 0.6370 ± 0.0200 & 0.6608 ± 0.0236 & 0.8428 → 0.9500 \\
-Luna & AG News & 0.4823 ± 0.0338 & 0.6262 ± 0.0513 & 0.8583 → 1.0000 \\
+Luna & Bills & 0.4228 ± 0.0313 & 0.4181 ± 0.0154 & 0.8596 \ensuremath{\rightarrow} 0.9388 \\
+Luna & SIB-200 & 0.4490 ± 0.0191 & 0.4759 ± 0.0145 & 0.8100 \ensuremath{\rightarrow} 0.9643 \\
+Luna & MASSIVE & 0.6370 ± 0.0200 & 0.6608 ± 0.0236 & 0.8428 \ensuremath{\rightarrow} 0.9500 \\
+Luna & AG News & 0.4823 ± 0.0338 & 0.6262 ± 0.0513 & 0.8583 \ensuremath{\rightarrow} 1.0000 \\
 \end{longtable}
 }
 
