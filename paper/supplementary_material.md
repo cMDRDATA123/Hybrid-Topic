@@ -174,7 +174,7 @@ The next instruction is followed by the full current topic list under “Current
 
 补充请求同时提供现有主题表与未分配文档，要求只增加尚未涵盖的重复主题。没有这样的主题时返回空列表，已有主题保持原有名称和范围。
 
-The public interface can insert a user-supplied analytical direction before the document or topic-list blocks. The experimental requests use the general discovery instructions above. The two cloud batches contain 99 recorded request files; all use the same initial or supplementary instruction prefix. 
+The public interface can insert a user-supplied analytical direction before the document or topic-list blocks. The experimental requests use the general discovery instructions above. The two cloud batches contain 99 recorded request files; all use the same initial or supplementary instruction prefix.
 
 
 ## Prompt sensitivity: compact and neutral / 提示词敏感性比较
