@@ -52,9 +52,9 @@ The generation records retain model identifiers, request configuration, selected
 
 ### S3. Full numeric evidence
 
-[Full result tables](results/topicgpt_aligned_20260911/tables.md) include HMP, coverage, ARI and NMI for all six methods, both generators and every collection. [Per-run metrics](results/topicgpt_aligned_20260911/per_run_metrics.csv) contain 240 rows. [The aggregation manifest](results/topicgpt_aligned_20260911/manifest.json) records source and builder identities. Repeated BERTopic rows identify reused results, not additional baseline evidence. Main-text tables are generated from the same aggregate file using `scripts/update_manuscript_tables.py`.
+The archived full result tables include HMP, coverage, ARI and NMI for all six methods, both generators and every collection. Per-run metrics contain 240 rows. The aggregation manifest records source and builder identities. Repeated BERTopic rows identify reused results, not additional baseline evidence. Main-text tables are generated from the same aggregate file using `scripts/update_manuscript_tables.py`.
 
-For sensitivity and provenance, the [legacy global-HMP tables](results/tables.md) retain the earlier definition: the harmonic mean of global purity and inverse purity. The [complete two-formula comparison](results/topicgpt_formula_20260910/README.md) records all 240 configurations. The earlier reporting definition and the amendment are documented in the reproduction materials. Three of the 32 recorded final-Hybrid comparator orderings change: Luna versus BERTopic on AG News, and Luna versus matched KMeans on Bills and MASSIVE. These differences are retained in full; no favorable subset determines the reporting definition.
+For sensitivity and provenance, the legacy global-HMP tables retain the earlier definition: the harmonic mean of global purity and inverse purity. The complete two-formula comparison records all 240 configurations. The earlier reporting definition and the amendment are documented in the reproduction materials. Three of the 32 recorded final-Hybrid comparator orderings change: Luna versus BERTopic on AG News, and Luna versus matched KMeans on Bills and MASSIVE. These differences are retained in full; no favorable subset determines the reporting definition.
 
 
 ### S4. Software implementation
@@ -104,9 +104,9 @@ The complete input is limited to 75% of the configured context capacity, rounded
 
 ### S3. 完整数值证据
 
-[完整结果表](results/topicgpt_aligned_20260911/tables.md)包含全部六种方法、两种生成模型及每份语料的 HMP、覆盖率、ARI 和 NMI。[逐次指标](results/topicgpt_aligned_20260911/per_run_metrics.csv)共240行。[汇总清单](results/topicgpt_aligned_20260911/manifest.json)记录来源与构建程序身份。重复的 BERTopic 行表示结果复用，不代表额外基线证据。英文主文表格通过 `scripts/update_manuscript_tables.py` 从同一汇总文件生成，中文表格保留相同数字。
+研究存档中的完整结果表包含全部六种方法、两种生成模型及每份语料的 HMP、覆盖率、ARI 和 NMI。逐次指标共240行。汇总清单记录来源与构建程序身份。重复的 BERTopic 行表示结果复用，不代表额外基线证据。英文主文表格通过 `scripts/update_manuscript_tables.py` 从同一汇总文件生成，中文表格保留相同数字。
 
-作为敏感性分析和来源记录，[旧全局 HMP 表](results/tables.md)保留原定义，即全局纯度与逆纯度的调和平均。[完整两公式比较](results/topicgpt_formula_20260910/README.md)包含全部240个配置。指标修订过程另见复现材料。已记录的32项最终 Hybrid 与对照的排序中，有三项方向改变：Luna 在 AG News 上相对 BERTopic，以及 Luna 在 Bills、MASSIVE 上相对匹配 KMeans。这些差异完整保留，报告定义不由某个有利子集决定。
+作为敏感性分析和来源记录，旧全局 HMP 表保留原定义，即全局纯度与逆纯度的调和平均。完整两公式比较包含全部240个配置。指标修订过程另见复现材料。已记录的32项最终 Hybrid 与对照的排序中，有三项方向改变：Luna 在 AG News 上相对 BERTopic，以及 Luna 在 Bills、MASSIVE 上相对匹配 KMeans。这些差异完整保留，报告定义不由某个有利子集决定。
 
 ### S4. 软件实现
 
@@ -135,14 +135,14 @@ The new-document query uses a weighted lookup over fitted reference scores rathe
 
 The current HMP is the category-size-weighted best-match F measure described in Amigó et al. (2009), Section 4.1, also used under the HMP name by TopicGPT. The implementation was checked against TopicGPT commit 450564466abe72091797c728a90cfeec8ba3d651. The reporting definition was changed after both formulas had been inspected; all methods were rescored without changing predictions or eligible samples. See the [evaluation amendment](../docs/EVALUATION_PROTOCOL_20260911.md). No claim of prospective metric registration is made.
 
-[传播开关完整结果](results/propagation_ablation_20260915/summary.csv) · [配对差值](results/propagation_ablation_20260915/paired_summary.csv) · [实验协议](results/propagation_ablation_20260915/protocol.md)。共同已分配子集作为选择条件下的辅助诊断，用于观察两种设置都可分配的文本，其数值不替代全体测试集指标。
+传播开关完整结果 · 配对差值 · 实验协议。共同已分配子集作为选择条件下的辅助诊断，用于观察两种设置都可分配的文本，其数值不替代全体测试集指标。
 
 
 ## Generator topic example / 生成器主题案例
 
 MASSIVE has the largest absolute mean HMP difference between the two generators in the main table. We inspect the first scheduled paired run (identifier 11) to describe topic scope and report final topic counts for all five runs, in identifier order 11, 23, 37, 53, 71. GPT-4.1 mini: 11, 11, 11, 11, 14. Luna: 24, 28, 22, 28, 24. English main-text names for Luna topics are translations of the Chinese output.
 
-选取MASSIVE以具体查看主表中生成器平均HMP差异最大的语料；主题描述取既定顺序的首组运行，主题数量则覆盖全部五次运行。来源路径、文件哈希与所引主题字段保存于[案例证据](review_comments_20260915/wp7_case_evidence.json)。
+选取MASSIVE以具体查看主表中生成器平均HMP差异最大的语料；主题描述取既定顺序的首组运行，主题数量则覆盖全部五次运行。主题示例与运行选择依据如下。
 
 ### GPT-4.1 mini
 
@@ -174,7 +174,7 @@ The next instruction is followed by the full current topic list under “Current
 
 补充请求同时提供现有主题表与未分配文档，要求只增加尚未涵盖的重复主题。没有这样的主题时返回空列表，已有主题保持原有名称和范围。
 
-The public interface can insert a user-supplied analytical direction before the document or topic-list blocks. The experimental requests use the general discovery instructions above. The two cloud batches contain 99 recorded request files; all use the same initial or supplementary instruction prefix. File identities and checked prefixes are retained in the [prompt evidence record](review_comments_20260915/wp8_prompt_evidence.json).
+The public interface can insert a user-supplied analytical direction before the document or topic-list blocks. The experimental requests use the general discovery instructions above. The two cloud batches contain 99 recorded request files; all use the same initial or supplementary instruction prefix. 
 
 
 ## Prompt sensitivity: compact and neutral / 提示词敏感性比较
@@ -200,12 +200,12 @@ Neutral / 中性：
 | 5.6 Luna | MASSIVE | 25.2 | 28.0 | 0.6608 | 0.6676 |
 | 5.6 Luna | AG News | 16.6 | 22.6 | 0.6262 | 0.4932 |
 
-[All 80 final runs](results/prompt_sensitivity_20260920/per_run.csv), [means and sample SD](results/prompt_sensitivity_20260920/summary.csv), [all 480 method configurations](results/prompt_sensitivity_20260920/all_methods_per_run.csv), and [all 96 method summaries](results/prompt_sensitivity_20260920/all_methods_summary.csv) provide topic counts, HMP, coverage, ARI, and NMI. Topic counts refer to the final saved codebook, including residual additions. SD uses the sample definition across five runs. Full provenance and frozen-source reproduction instructions are in the [comparison README](results/prompt_sensitivity_20260920/README.md).
+All 80 final runs, means and sample SD, all 480 method configurations, and all 96 method summaries provide topic counts, HMP, coverage, ARI, and NMI. Topic counts refer to the final saved codebook, including residual additions. SD uses the sample definition across five runs. The table above summarizes topic counts and HMP for both conditions.
 
 逐次数据及汇总覆盖全部模型与语料。最终主题数由保存的主题集合直接计数，包含残差补充；标准差按五次运行计算样本标准差。六种方法均完整报告，复用基线行保留原分数。
 
 ### Percentile threshold / 分位阈值
 
-P95 concentrates graph connections on the strongest approximately 5% of document-pair similarities within each collection. The fixed value follows the development default (D-011). The development record describes 45 engineering checks using three previously seen training collections, five historical topic sets, and the 92.5th, 95th, and 97.5th percentiles. Those topic sets had previously been generated from the collections. This record documents the origin of the default; the reported main experiments hold it fixed across collections. The historical record is archived in `archive/release_consolidation_20260906/workspace/docs/PROJECT_MEMORY.md`.
+P95 concentrates graph connections on the strongest approximately 5% of document-pair similarities within each collection. The fixed value follows the development default (D-011). The development record describes 45 engineering checks using three previously seen training collections, five historical topic sets, and the 92.5th, 95th, and 97.5th percentiles. Those topic sets had previously been generated from the collections. This record documents the origin of the default; the reported main experiments hold it fixed across collections.
 
 P95按每份语料内部的相似度分布保留关系最强的约5%文档对。具体数值沿用开发默认D-011。开发记录包含三份已有训练语料、五组历史主题和P92.5、P95、P97.5共45次工程检查；这些历史主题此前由相关语料生成。该记录说明默认设置的来源，本文主实验在各语料中统一固定使用P95。

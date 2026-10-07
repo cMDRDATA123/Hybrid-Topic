@@ -7,7 +7,7 @@ model discovers named topic definitions; local embeddings and graph diffusion
 assign documents. It accepts a supplied topic codebook or an optional analysis
 direction, and supports result inspection, export, model saving, and new texts.
 
-[Read the English manuscript (PDF)](paper/hybrid_topic_en.pdf) · [中文论文](paper/hybrid_topic_zh.pdf) · [Quickstart notebook](examples/quickstart.ipynb) · [Reproduce the results](docs/REPRODUCIBILITY.md)
+[Read the English manuscript (PDF)](paper/hybrid_topic_en.pdf) · [中文论文](paper/hybrid_topic_zh.pdf) · [Quickstart notebook](examples/quickstart.ipynb) · [Supplementary methods and analyses](paper/supplementary_material.md)
 
 Developed by **Jiashuo Ren, University of Stirling**. Code is available under the [MIT license](LICENSE); article and dataset terms are described in [NOTICE.md](NOTICE.md).
 
@@ -59,9 +59,9 @@ OpenAI and incurs API usage; embeddings run on the configured local device.
 Use `--csv comments.csv --text-column text` for your own collection, or
 `--direction "Identify recurring product issues"` to supply optional guidance.
 
-The public [reproduction guide](docs/REPRODUCIBILITY.md) distinguishes rebuilding
-paper tables from numeric data, scoring frozen predictions, and rerunning models.
-The [current result tables](paper/results/topicgpt_aligned_20260911/tables.md) include all methods and runs.
+The [experiment guide](docs/REPRODUCIBILITY.md) describes software examples,
+dataset sources, and the research materials required to rerun experiments.
+The [English manuscript](paper/hybrid_topic_en.pdf) and [supplementary material](paper/supplementary_material.md) report the experiment results and additional analyses.
 
 ## Model workflow
 
@@ -319,7 +319,7 @@ into the new Hybrid Topic averages.
 
 ### Topic-generation default
 
-The release uses a compact set of recurring topics as its default discovery instruction. Topic count remains open. The manuscript reports this configuration as the main experiment and a complete neutral-prompt sensitivity comparison in Section 5.4. See [the comparison data](paper/results/prompt_sensitivity_20260920/README.md) for both conditions.
+The release uses a compact set of recurring topics as its default discovery instruction. Topic count remains open. The manuscript reports this configuration as the main experiment and a complete neutral-prompt sensitivity comparison in Section 5.4. See [the supplementary material](paper/supplementary_material.md) for both conditions.
 
 ## Citation
 

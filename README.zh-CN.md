@@ -18,7 +18,7 @@ Hybrid Topic 是一个可以在 Python 和 Jupyter 中使用的主题建模工�
 - **查看和导出结果**：检查主题规模、文档分配与分数，导出 CSV 和 JSON。
 - **保存并继续使用**：保存模型后，对新文本进行分配，沿用已有主题。
 
-默认提示词要求生成一组精简、反复出现的主题（a compact set of recurring topics），具体数量由模型根据文本决定。论文将这一配置作为主实验，并在第5.4节完整比较中性提示词下的结果，详见[提示词比较数据](paper/results/prompt_sensitivity_20260920/README.md)。
+默认提示词要求生成一组精简、反复出现的主题（a compact set of recurring topics），具体数量由模型根据文本决定。论文将这一配置作为主实验，并在第5.4节完整比较中性提示词下的结果，详见[补充材料](paper/supplementary_material.md)。
 
 ## 安装与快速开始
 
@@ -228,26 +228,13 @@ Claude 通过 `output_config.format` 设置结构化输出，通过 `output_conf
 - 发布验证基于 macOS/Python 3.12；论文实验使用固定的中英文语料子集。长文档、大规模运行、其他语言和本地生成的质量需要进一步验证。
 - 当前训练流程为 `bounded-residual-reference-diffusion-v2`，新文本查询规则为 `frozen_reference_one_step_v1`。旧版 `initial-codebook-reference-diffusion-v1` 保存文件仍可加载，并保留其原有版本身份。
 
-## 论文与实验复现
+## 论文与补充材料
 
-论文主实验使用精简提示词，补充比较完整报告中性提示词下的主题数量与分组表现。各批结果与其数据、配置和代码版本对应。
+- [英文论文 PDF](paper/hybrid_topic_en.pdf)
+- [中文论文 PDF](paper/hybrid_topic_zh.pdf)
+- [补充方法与分析](paper/supplementary_material.md)
 
-- [主实验完整结果](paper/results/topicgpt_aligned_20260911/tables.md)：包括所有方法和运行。
-- [精简与中性提示词比较](paper/results/prompt_sensitivity_20260920/README.md)：包括80次最终拟合及全部方法配置。
-- [公开预测数据](paper/results/public_predictions_20260911/README.md)：包含编码后的参考标签与预测，保留评分所需信息，省去原始语料正文。
-- [复现指南](docs/REPRODUCIBILITY.md)：分别介绍汇总表重建、逐篇预测评分，以及重新生成主题所需的条件。
-- [发布验证记录](docs/RELEASE_VALIDATION.md)：安装、示例、测试与评分核对结果。
-
-例如，安装基础依赖后，可以从仓库根目录重新评分：
-
-```bash
-python -m experiments.score_public_predictions \
-  --bundle paper/results/public_predictions_20260911 --out tmp/rescored_public
-python -m scripts.build_aligned_paper_results \
-  --per-run tmp/rescored_public/per_run_metrics.csv --out tmp/rescored_public_tables
-```
-
-这一路径使用公开数值文件，无需 API、原始文本或模型下载。请使用新的输出目录。完整重新生成实验需要复现指南所列的原始研究材料。
+论文报告主实验、图传播消融和提示词比较；补充材料展开额外分析与方法细节。软件示例与实验运行说明见[实验指南](docs/REPRODUCIBILITY.md)。
 
 ## 开发与目录结构
 

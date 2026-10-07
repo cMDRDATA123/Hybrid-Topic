@@ -12,7 +12,7 @@
 
 `HMP = sum_c (n_c / N) * max_k [2*n_ck / (n_c + n_k)]`
 
-采用 [TopicGPT 论文](https://aclanthology.org/2024.naacl-long.164/) Appendix I 和 [calculate_purity 固定代码版本](https://github.com/chtmp223/topicGPT/blob/450564466abe72091797c728a90cfeec8ba3d651/topicgpt_python/utils.py)。原函数已直接执行，并与独立公式在全部 240 个评分位置核对，来源及验证见 [公式评分记录](../paper/results/topicgpt_formula_20260910/manifest.json)。对齐具体实现不等于完成与 TopicGPT 模型的同条件实验比较。
+采用 [TopicGPT 论文](https://aclanthology.org/2024.naacl-long.164/) Appendix I 和 [calculate_purity 固定代码版本](https://github.com/chtmp223/topicGPT/blob/450564466abe72091797c728a90cfeec8ba3d651/topicgpt_python/utils.py)。原函数已直接执行，并与独立公式在全部 240 个评分位置核对，来源及验证见 公式评分记录（作者研究存档）。对齐具体实现不等于完成与 TopicGPT 模型的同条件实验比较。
 
 旧公式 `2PR/(P+R)`（P、R 分别为全局 purity 与 inverse purity）保留为历史/敏感性结果。两者不是相同数值公式。
 
@@ -26,8 +26,8 @@
 
 ## 当前文件与复现
 
-- [当前主结果](../paper/results/topicgpt_aligned_20260911/tables.md)、[逐次指标](../paper/results/topicgpt_aligned_20260911/per_run_metrics.csv)、[版本清单](../paper/results/topicgpt_aligned_20260911/manifest.json)。
-- [旧主结果](../paper/results/tables.md) 与 [完整两公式比较](../paper/results/topicgpt_formula_20260910/README.md) 保留。后者关于“仅作补充”的建议是历史记录，已由本次用户决定取代。
+- 当前主结果（作者研究存档）、逐次指标（作者研究存档）、版本清单（作者研究存档）。
+- 旧主结果（作者研究存档） 与 完整两公式比较（作者研究存档） 保留。后者关于“仅作补充”的建议是历史记录，已由本次用户决定取代。
 - 修订前稿件与图表快照。
 - [公开评分复现入口](REPRODUCIBILITY.md)。评分程序同时输出旧 `harmonic_purity` 与 `topicgpt_weighted_best_f1`，不偷偷改变旧列的意思。当前报告构建器明确把后者映射为主表 HMP，旧值另存 `legacy_global_hmp`；当前结果 manifest 标明列含义和版本。
 
