@@ -7,7 +7,7 @@ model discovers named topic definitions; local embeddings and graph diffusion
 assign documents. It accepts a supplied topic codebook or an optional analysis
 direction, and supports result inspection, export, model saving, and new texts.
 
-[English paper](paper/hybrid_topic_en.pdf) · [中文论文](paper/hybrid_topic_zh.pdf) · [Quickstart notebook](examples/quickstart.ipynb) · [Reproduce the results](docs/REPRODUCIBILITY.md)
+[Read the English manuscript (PDF)](paper/hybrid_topic_en.pdf) · [中文论文](paper/hybrid_topic_zh.pdf) · [Quickstart notebook](examples/quickstart.ipynb) · [Reproduce the results](docs/REPRODUCIBILITY.md)
 
 Developed by **Jiashuo Ren, University of Stirling**. Code is available under the [MIT license](LICENSE); article and dataset terms are described in [NOTICE.md](NOTICE.md).
 
